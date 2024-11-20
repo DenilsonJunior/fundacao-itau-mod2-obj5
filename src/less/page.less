@@ -1,0 +1,106 @@
+@import 'includes/imports.less';
+
+/* less components */
+@import 'includes/component/component.slider.less';
+@import 'includes/component/component.modal.less';
+// @import 'includes/component/component.acessibilidade.less';
+// @import 'includes/component/component.libras.less';
+@import 'includes/component/header.less';
+@import 'includes/component/attention.less';
+// @import 'includes/component/avatar.less';
+// @import 'includes/component/containerAvatar.less';
+// @import 'includes/component/equipamentos.less';
+// @import 'includes/component/conquistas.less';
+// @import 'includes/component/ballon.less';
+// @import 'includes/component/ballonQuiz.less';
+// @import 'includes/component/instrucoes.less';
+// @import 'includes/component/menuScreen.less';
+// @import 'includes/component/exercise.dragdrop.less';
+// @import 'includes/component/playerAudio.less';
+@import 'includes/exercise/exercise.pick-x.less';
+
+
+/* less template */
+@import 'includes/spacers.less';
+@import 'includes/colors.less';
+@import 'includes/fonts.less';
+@import 'includes/buttons.less';
+@import 'includes/defaults.less';
+
+html,
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mr-full {
+	top: 0 !important;
+	height: 100vh !important;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+*,
+h1, h2, h3, h4, h5,
+p, ul, a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+* {
+	font-family: Helvetica Neue, Arial, RD Contrast, sans-serif;
+	font-weight: normal;
+}
+
+strong, b, .bold {
+	font-weight: bold;
+}
+
+.hide {
+	display: none !important;
+}
+
+h1 {
+	font-size: @font-06;
+}
+
+p {
+	font-size: @font-02;
+}
+
+body {
+	background-image: url(../../assets/img/bg1.png);
+	background-size: cover;
+	background-position: center;
+
+	// .btn-next {
+	// 	display: none;
+	// }
+
+	.body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		position: relative;
+
+	}
+}

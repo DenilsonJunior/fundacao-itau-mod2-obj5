@@ -1,0 +1,73 @@
+mixin bag()
+	#schoolbag
+		.whapper
+			+image('schoolbag-ico01.png','schoolbag')
+			.box
+				.lineBox
+					button.equip.equip2(data-modal="#schoolbag02" tabindex=acessib_count++, data-libras="schoolbag02", aria-label="Cantil")
+						+image('schoolbag-conquista01.png', 'card')
+					button.equip.equip4(data-modal="#schoolbag03" tabindex=acessib_count++, data-libras="schoolbag03", aria-label="Camera" )
+						+image('schoolbag-conquista02.png', 'card')
+					button.equip.equip1(data-modal="#schoolbag01" tabindex=acessib_count++, data-libras="schoolbag01", aria-label="Binóculos" )
+						+image('schoolbag-conquista03.png', 'card')
+					button.equip.equip3(data-modal="#schoolbag04" tabindex=acessib_count++, data-libras="schoolbag04", aria-label="Chapéu australiano")
+						+image('schoolbag-conquista04.png', 'card')
+					button.equip.equip5(data-modal="#schoolbag05" tabindex=acessib_count++, data-libras="schoolbag05" aria-label="Caixa de primeiros socorros")
+						+image('schoolbag-conquista05.png', 'card')
+				
+				.it.it1.hide(tabindex=acessib_count++)
+					p.description Janela de fundo azul mostra o que há dentro da mochila. Em destaque, imagem de um binóculo.
+					p Você conquistou seu <b>binóculo</b> de desbravador ou desbravadora, que será muito útil em seu dia a dia. <strong>Clique nele</strong> para saber mais!
+				
+				.it.it2.hide(tabindex=acessib_count++) 
+					p.description Janela de fundo azul mostra o que há dentro da mochila. Em destaque, imagem de um cantil.
+					p Você conquistou um <b>cantil</b>, ele será muito útil em seu dia a dia. <strong>Clique nele</strong> para saber mais!
+				
+				.it.it3.hide(tabindex=acessib_count++)
+					p.description Janela de fundo azul mostra o que há dentro da mochila. Em destaque, imagem de um chapéu australiano.
+					p Você conquistou um <b>chapéu australiano</b>, ele será muito útil em seu dia a dia. <strong>Clique nele</strong> para saber mais!
+				
+				.it.it4.hide(tabindex=acessib_count++)
+					p.description Janela de fundo azul mostra o que há dentro da mochila. Em destaque, imagem de uma câmera fotográfica.
+					p Você conquistou sua <b>câmera fotográfica</b>, que será muito útil em seu dia a dia. <strong>Clique nela</strong> para saber mais!
+				
+				.it.it5.hide(tabindex=acessib_count++)
+					p.description Janela de fundo azul mostra o que há dentro da mochila. Em destaque, imagem de um kit de primeiro socorros.
+					p Você conquistou seu <b>kit de primeiro socorros</b>c, que será muito útil em seu dia a dia. <strong>Clique nele</strong> para saber mais!
+				
+				.modal-close(tabindex=acessib_count++)
+
+		//- o binóculo é o primeiro
+		#schoolbag01.bag
+			.box
+				h2(tabindex=acessib_count++) Olha o passarinho!
+				p(tabindex=acessib_count++) O binóculo é muito utilizado para observar pássaros ou animais selvagens porque permite enxergar melhor tudo o que está longe, ideal para quem desbrava a natureza.
+				p(tabindex=acessib_count++) Agora você já tem um na sua mochila, <b>parabéns pela sua conquista!</b>
+				.modal-close.pulse(tabindex=acessib_count++)
+
+		#schoolbag02.bag
+			.box
+				h2(tabindex=acessib_count++) Bateu a sede? <br>Pegue seu cantil!
+				p(tabindex=acessib_count++) O cantil é um recipiente de alumínio, plástico ou outro material resistente, usado para armazenar qualquer tipo de líquido. Ele é muito útil em viagens longas ou também para fazer passeios ou caminhadas ao ar livre.
+				p(tabindex=acessib_count++) O mais comum é as pessoas armazenarem água potável, ou seja, água própria para beber!
+				.modal-close.pulse(tabindex=acessib_count++)
+		
+		#schoolbag03.bag
+			.box
+				h2(tabindex=acessib_count++) Diga Xis!
+				p(tabindex=acessib_count++) A câmera fotográfica é um instrumento incrível para captar imagens! Apesar de atualmente utilizarmos muito o celular, a câmera possui diferentes recursos para tirar fotos. Muitas fotografias podem ser utilizadas como recurso de registro ou até mesmo como arte, como aquelas tiradas na natureza.
+				.modal-close.pulse(tabindex=acessib_count++)
+		
+		#schoolbag04.bag
+			.box
+				h2(tabindex=acessib_count++) Na maré alta ou baixa, todo pescador e toda pescadora podem andar no estilo com o chapéu australiano!
+				p(tabindex=acessib_count++) Esse lindo modelo de chapéu, conhecido também como chapéu pescador, chapéu caçador e chapéu cata ovo, faz enorme sucesso por onde passa. Modelo muito utilizado em pescaria, caminhada, montanhismo, trekking, explorações, cavalgadas, até em um evento mais tranquilo, como praia e atividades ao ar livre.
+				p(tabindex=acessib_count++) Tanto homens quanto mulheres amam usar esse chapéu. Ele é totalmente unissex e versátil para o dia a dia de um aventureiro e de uma aventureira, tornando-se um modelo universal.
+				.modal-close.pulse(tabindex=acessib_count++)
+		
+		#schoolbag05.bag
+			.box
+				h2(tabindex=acessib_count++) Prevenção e proteção!
+				p(tabindex=acessib_count++) Uma caixa de primeiros socorros é uma embalagem que contém objetos e produtos que podem ser utilizados em uma emergência como termômetro, algodão e remédios. Em alguns locais ela é obrigatória.
+				p(tabindex=acessib_count++) Tenha sempre seu kit quando fizer trilhas, acampamentos ou expedições. É uma forma de prevenção e proteção!
+				.modal-close.pulse(tabindex=acessib_count++) 

@@ -1,0 +1,13 @@
+mixin posterContainerBase()
+    .posterContainerBase.hide.in
+        .center
+            .title.posterBaseView
+                h1.up Parabéns! Você conquistou uma parte do pôster!
+                +image('poster1.png', 'poster poster1 hide up delay1', '')
+                +image('poster2.png', 'poster poster2 hide up delay1', '')
+                +image('poster3.png', 'poster poster3 hide up delay1', '')
+                +image('poster4.png', 'poster poster4 hide up delay1', '')
+            
+            .containerBtn.up.delay2  
+                button.btnCustom01.animated.pulse.infinite(onclick="navigate.next()")
+                    p Avançar

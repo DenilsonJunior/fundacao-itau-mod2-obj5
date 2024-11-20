@@ -1,0 +1,48 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	body(prev-hide, next-hide, menu-hide)
+
+		header.wow.up
+			+image('logo.png', 'logo')
+		
+		section.sec1.up
+			h1 Considerações finais
+			p O guia "Atuação Intersetorial entre Educação e Assistência Social para acelerar os ODS" aborda como essas duas áreas podem colaborar para fortalecer os direitos humanos e a justiça social. Ele inicia com uma análise contemporânea dos Direitos Humanos sob uma perspectiva decolonial, que valoriza a diversidade e promove uma educação inclusiva, essencial para uma sociedade mais justa.
+			p O Programa Nacional de Direitos Humanos e a Educação em Direitos Humanos são explorados, destacando a necessidade de integrar esses princípios nas práticas pedagógicas, formando cidadãos ativos na promoção da paz e do respeito. Em seguida, o guia discute os Objetivos de Desenvolvimento Sustentável (ODS) e sua territorialização, com ênfase em aplicá-los localmente em escolas e Centros de Referência de Assistência Social (CRAS). A ferramenta Mapa Social é apresentada como um meio de facilitar a implementação dos ODS de forma contextualizada.
+			p Por fim, ressalta-se a importância da intersetorialidade entre a educação e a assistência social para construir redes de apoio que assegurem o desenvolvimento integral das crianças e adolescentes. O guia espera preparar os participantes para uma atuação integrada que valorize os direitos humanos e contribua para a educação integral e o desenvolvimento sustentável em suas comunidades.
+		
+		section.sec2
+			+image('img01.png', 'img up')
+			.container-accordeon.up
+				.corpbtn
+					button.accordeon-title
+						.boxImg
+							+image('help/btn05.png', 'img')
+						p Referências
+					.accordeon-texto
+						p <b>ARANTES, E. M. de M.</b> Rostos de crianças no Brasil. In: PILOTTI, F.; RIZZINI, I. (org.). A arte de governar crianças: a história das políticas sociais, da legislação e da assistência à infância no Brasil. Rio de Janeiro: Universidade Santa Úrsula, 1995.
+						p <b>CARBALLIDO, Manuel Eugenio Gándara.</b> Repensando los derechos humanos desde las luchas. Revista de Direitos Fundamentais e Democracia, Curitiba, v. 15, n. 15, p. 41-52, jan./jun. 2014.
+						p <b>ESCRIVÃO FILHO, Antônio; SOUSA JUNIOR, José Geraldo de.</b> Para um debate teórico-conceitual e político sobre os direitos humanos. Belo Horizonte: D`Placido, 2016.
+						p <b>GUARÁ, I. et al.</b> Gestão municipal dos serviços de atenção à criança e ao adolescente. São Paulo: IEE/PUC-SP; Brasília: SAS/MPAS, 1998.
+						p <b>HERRERA FLORES, Joaquín.</b> A (re)invenção dos direitos humanos. Florianópolis: Fundação Boiteux, 2009.
+						p <b>KOGA, Dirce.</b> Aproximações sobre o conceito de território e sua relação com a universalidade das políticas sociais. Serviço Social em Revista, Londrina, v. 16, n. 1, p. 30-42, jul./dez. 2013.
+						p <b>MIGNOLO, W.</b> A colonialidade de cabo a rabo: o hemisfério ocidental no horizonte conceitual da modernidade. In: LANDER, Edgardo (org.). A colonialidade do saber: eurocentrismo e ciências sociais. Perspectivas latino-americanas. Buenos Aires: Clacso, 2005. p. 34-54.
+						p <b>QUIJANO, Aníbal.</b> Colonialidad del poder, eurocentrismo y América Latina. In: LANDER, Edgardo (org.). La colonialidad del saber: eurocentrismo y ciencias sociales. Perspectivas latinoamericanas. Buenos Aires: Clacso, 2005. p. 227-277. Disponível em: <a href="http://www.sociologia.uff.br/wp-content/uploads2/2019/08/QUIJANO-An%C3%ADbal.-Colonialidade-do-poder-eurocentrismo-e-Am%C3%A9rica-Latina.pdf", target="_blank", rel="noopener noreferrer">http://www.sociologia.uff.br/wp-content/uploads2/2019/08/QUIJANO-An%C3%ADbal.-Colonialidade-do-poder-eurocentrismo-e-Am%C3%A9rica-Latina.pdf</a>. Acesso em: 30 maio 2024.
+						p <b>PEREIRA, Karine; TEIXEIRA, Solange.</b> Redes e intersetorialidade nas políticas sociais: reflexões sobre sua concepção na política de assistência social. Textos & Contextos, Porto Alegre, v. 12, n. 1, p. 114-127, jan./jun. 2013.
+						p <b>RIZZINI, I.; PILOTTI, F. (org.).</b> A arte de governar crianças: a história das políticas sociais, da legislação e da assistência à infância no Brasil. 3. ed. São Paulo: Cortez, 2011.
+						p <b>SANTOS, Boaventura de Sousa; CHAUÍ, Marilena.</b> Direitos humanos, democracia e desenvolvimento. São Paulo: Cortez, 2013.
+						p <b>SEN, Amartya.</b> A ideia de justiça. São Paulo: Companhia das Letras, 2011.
+						p <b>SILVEIRA, Jucimeri Isolda.</b> Direitos humanos e políticas públicas: panorama e desafios. In: BONETI, Lindomar Wessler et al. (org.). Educação em direitos humanos: história, epistemologia e práticas pedagógicas. Ponta Grossa: Editora UEPG, 2019. p. 57-76.
+						p <b>SILVEIRA, Jucimeri Isolda; NASCIMENTO, Sergio L.; ZALAMBESSA, Simões.</b> Colonialidade e decolonialidade na crítica ao racismo e às violações: para refletir sobre os desafios da educação em direitos humanos. Educar em Revista, Curitiba, v. 37, 2021. Disponível em: <a href="https://doi.org/10.1590/0104-4060.71306", target="_blank", rel="noopener noreferrer">https://doi.org/10.1590/0104-4060.71306</a>. Acesso em: 20 maio 2024.
+						p <b>SILVEIRA, Jucimeri Isolda; COLIN, Denise (Org.).</b> Guia de orientação do resultado sistêmico 7: proteção integral e intersetorialidade via CRAS. Brasília: UNICEF, 2023.
+						p <b>SPOSATI, Aldaíza.</b> Gestão pública intersetorial: sim ou não? Comentários de experiência. Serviço Social & Sociedade, São Paulo, n. 85, p. 133-141, mar. 2006.
+
+		footer.up
+			+image('logo-footer.png', 'imgFooter')
+
+block scripts
+	script(src="script.js")

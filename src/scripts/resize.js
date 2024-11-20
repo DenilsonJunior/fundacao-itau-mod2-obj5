@@ -1,0 +1,1 @@
+BehaviorAdapt(1920, 1080, 30);

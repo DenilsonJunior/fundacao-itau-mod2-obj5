@@ -1,0 +1,37 @@
+mixin help()
+    +modal("help", "modal hide")
+        #helpInit
+            .bodyHelp
+                button.modal-closeHelp
+                    +image('help/btnclose.png', 'btnCloseHelp')
+                +image('logo.png', 'logoHelp')
+                p.textHelp.up.prop-mt4 Ao longo da trilha, você terá que interagir com as telas para continuar.
+                p.textHelp.up <b>Siga sempre as instruções indicadas a cada tela, e, além disso, fique atento aos botões disponíveis como:</b>
+                .flexIconsHelp.up
+                    .cardHelp
+                        +image('help/btn01.png', 'icoHelp')
+                        .boxTextHelp
+                            p Ajuda
+                    .cardHelp
+                        +image('help/btnclose.png', 'icoHelp')
+                        .boxTextHelp
+                            p Fechar
+                    .cardHelp
+                        +image('help/btn03.png', 'icoHelp')
+                        .boxTextHelp
+                            p Avançar
+                    .cardHelp
+                        +image('help/btn04.png', 'icoHelp')
+                        .boxTextHelp
+                            p Retornar
+                    .cardHelp
+                        +image('help/btn05.png', 'icoHelp')
+                        .boxTextHelp
+                            p Abrir/Explorar
+                    .cardHelp
+                        +image('help/btnmenu.png', 'icoHelp')
+                        .boxTextHelp
+                            p *<span>Menu de<br>Boas-vindas</span>
+                .flexBottomHelp.up
+                    +image('help/detal.png', 'detalHelp')
+                    p.textBottomHelp *Após ter visto cada conteúdo, ele ficará disponível no <b>Menu de Boas-vindas</b> que pode ser acessado a qualquer momento.

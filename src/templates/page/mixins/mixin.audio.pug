@@ -1,0 +1,14 @@
+mixin audioPlayer(template)
+    .audio-player(data-url=template.audio)
+        .playerBase
+            button.btn-play(type='button')
+                span.material-icons.icon-play play_arrow
+                span.material-icons.icon-pause pause
+                span.material-icons.icon-loop loop
+                span.material-icons.icon-error error_outline
+            .timeline
+                .line
+                    input(dir='ltr' type='range' min='0' max='100' value='0')
+                .data
+                    .current-time
+                    .time

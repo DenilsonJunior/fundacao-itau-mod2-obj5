@@ -1,0 +1,30 @@
+- var tabsSlide = [[], [], [], [], [], [],[], [], [], []];
+
+mixin modalSlide(template)
+	.modal-slide(class!=template.class)
+		.container-slides
+			+image('instrucaoModulo3.png', 'ico-instrucao')
+			.nav-ballon(indice=0)
+				button.btn-ballon.btn-ballon-prev(tabindex=-1)
+					+image('btnAvancar.svg', '')
+				button.btn-ballon.btn-ballon-next.pulse(tabindex=-1)
+					+image('btnAvancar.svg', '')
+				button.btn-ballon.btn-ballon-closed.pulse(tabindex=99, aria-label="Avançar")
+					+image('button-close.svg', '')
+			.fundo-ballon
+				block
+				each tab in tabsSlide[template.ind ? template.ind : 0 ]
+					.slide-ballon( libras = tab.libra , class = tab.classData )
+						.slide-base.up!=tab.block
+
+mixin slide-item(libra='', classData='', ind=0)
+	- var data = {};
+	- const oldBuf = pug_html;
+	- pug_html = '';
+	block
+	-
+		data.block = pug_html;
+		data.libra = libra;
+		data.classData = classData;
+		tabsSlide[ind].push(data);
+		pug_html = oldBuf;

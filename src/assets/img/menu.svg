@@ -1,0 +1,7 @@
+<svg id="Menu" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <path id="Caminho_4" data-name="Caminho 4" d="M49.007,70H20.993C9.4,70,0,60.169,0,48.04V21.96C0,9.833,9.4,0,20.993,0H49.007C60.6,0,70,9.833,70,21.96V48.04C70,60.169,60.6,70,49.007,70" transform="translate(70 70) rotate(180)" fill="#fff"/>
+  <g id="Grupo_15" data-name="Grupo 15" transform="translate(6.057 6.03)">
+    <path id="Caminho_9" data-name="Caminho 9" d="M0,0H57.93V57.93H0Z" fill="none"/>
+    <path id="Caminho_10" data-name="Caminho 10" d="M5.414,34.965h38.62a2.414,2.414,0,0,0,0-4.827H5.414a2.414,2.414,0,1,0,0,4.827Zm0-12.069h38.62a2.414,2.414,0,0,0,0-4.827H5.414a2.414,2.414,0,1,0,0,4.827ZM3,8.414a2.421,2.421,0,0,0,2.414,2.414h38.62a2.414,2.414,0,0,0,0-4.827H5.414A2.421,2.421,0,0,0,3,8.414Z" transform="translate(4.241 8.482)" fill="#0b2f2a"/>
+  </g>
+</svg>

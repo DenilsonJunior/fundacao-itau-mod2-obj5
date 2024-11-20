@@ -1,0 +1,102 @@
+@import '../../less/includes/colors.less';
+@import '../../less/includes/fonts.less';
+
+.mr-full {
+    background-image: url(../../assets/img/croqui.png);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: local;
+}
+
+header {
+    width: 100%;
+    background-color: #E9E9E9;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 4.7rem;
+
+    .logo {
+        height: 2.02rem;
+    }
+}
+
+.sec1 {
+    background-color: #053A57;
+    padding: 2.8rem 4.8rem 12rem;
+
+    h1 {
+        font-size: 1.4rem;
+        color: #ffffff;
+    }
+    
+    p {
+        font-size: 0.85rem;
+        margin: 1.3rem 0 0;
+        color: #ffffff;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+.sec2 {
+    padding: 0 4.8rem 3rem;
+    .img {
+        margin-top: -9.2rem;
+        width: 100%;
+    }
+    .container-accordeon {
+        padding: 0 4.4rem;
+        margin: 3.4rem 0 0;
+        .corpbtn {
+            .accordeon-title {
+                background-color: #209CD3;
+                width: 100%;
+                height: 6.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.5rem;
+                .boxImg {
+                    display: none;
+                }
+                p {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    color: #053A57;
+                }
+            }
+            .accordeon-texto {
+                display: none;
+                background-color: #053A57;
+                padding: 1.4rem 2.1rem;
+                border-radius: 0.5rem;
+                margin-top: .6rem;
+                p {
+                    font-size: .85rem;
+                    color: #ffffff;
+                    a {
+                        color: #ffffff;
+                        text-decoration: underline;
+                    }
+                }
+                p + p {
+                    margin: 1.4rem 0 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-image: url(../../assets/img/bg-footer.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    .imgFooter {
+        height: 5rem;
+    }
+}

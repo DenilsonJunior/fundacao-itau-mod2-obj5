@@ -1,0 +1,44 @@
+- const tabsQuiz = [];
+
+
+mixin ballonQuiz(template)
+	.container-ballon-quiz(class!=template.class)
+		
+		.fundo-ballon
+			block
+			each tab in tabsQuiz
+				.slide-ballon( libras = tab.libra , class = tab.classData )
+					.slide-base.up!=tab.block
+					if (tab.btn1Quiz)
+						.slide-btns-quiz
+							.btn-ballon-quiz.btn-ballon-quiz1!=tab.btn1Quiz
+							if (tab.btn2Quiz)
+								.btn-ballon-quiz.btn-ballon-quiz2!=tab.btn2Quiz
+					else
+						.nav-ballon(indice=0)
+							button.btn-ballon.btn-ballon-prev(tabindex=-1)
+								+image('btnAvancar.svg', '')
+							button.btn-ballon.btn-ballon-next.pulse(tabindex=-1)
+								+image('btnAvancar.svg', '')
+							button.btn-ballon.btn-ballon-closed.pulse(tabindex=99, aria-label="Avançar")
+								+image('button-close.svg', '')
+
+							
+		if (template.img)
+			+image('person.svg', 'ico-ballon')
+		else
+			+image('person2.svg', 'ico-ballon')
+
+mixin ballon-item-quiz( data_libra = "", classData = "", btn1Quiz = null, btn2Quiz = null )
+	- var data = {};
+	- const oldBuf = pug_html;
+	- pug_html = '';
+	block
+	-
+		data.block = pug_html;
+		data.libra = data_libra;
+		data.classData = classData;
+		data.btn1Quiz = btn1Quiz;
+		data.btn2Quiz = btn2Quiz;
+		tabsQuiz.push(data);
+		pug_html = oldBuf;

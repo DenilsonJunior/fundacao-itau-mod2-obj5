@@ -1,0 +1,9 @@
+node_modules
+flamboyant_modules
+scorm
+dist
+dist/*
+sys/automation/*
+*.zip
+*.doc*
+.DS_Store

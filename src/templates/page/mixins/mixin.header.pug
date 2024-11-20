@@ -1,0 +1,9 @@
+mixin header()
+    header
+        .logo
+            +image('logo.png', 'logotipo')
+        .listMenu
+            button.helpBtn
+                +image('help.svg', '')
+            button.menuBtn(onclick="navigate.goto('pag04')")
+                +image('menu.svg', '')

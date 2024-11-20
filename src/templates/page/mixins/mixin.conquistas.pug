@@ -1,0 +1,23 @@
+mixin medal()
+    #medal
+        .whapper
+            +image('medal-ico01.png','medal')
+            .box(tabindex=acessib_count++, aria-label="")
+                .lineBox
+                    .card.card1(aria-label="Manejando rejeitos")
+                        +image('medal-conquista01.png', 'ico')
+                        h2 Manejando<br> os rejeitos
+                    .line
+                    .card.card2(aria-label="Cuidando do rio Doce")
+                        +image('medal-conquista02.png', 'ico')
+                        h2 Cuidando do<br> rio Doce
+                    .line
+                    .card.card3(aria-label="Conhecendo a pesca")
+                        +image('medal-conquista03.png', 'ico')
+                        h2 Conhecendo<br> a pesca
+                    .line
+                    .card.card4(aria-label="Protegendo a biodiversidade")
+                        +image('medal-conquista04.png', 'ico')
+                        h2 Protegendo a biodiversidade
+
+                .modal-close.pulse(tabindex=acessib_count++)

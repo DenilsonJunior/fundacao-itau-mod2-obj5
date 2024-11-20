@@ -1,0 +1,41 @@
+#attention{
+	.modal-close{
+		display: none;
+	}
+
+	.box {
+		max-width: 25em;
+		overflow: visible;
+		&::before{
+			border-radius: 2em;
+		}
+	}
+
+	.conteinerModal{
+		flex-direction: column;
+		gap: 0.5em;
+
+		h1{
+			color: #fff;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		p{
+			color: #fff;
+			text-align: center;
+		}
+
+		.btns{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 3em;
+			position: absolute;
+			bottom: -2.8em;
+			.btnCustom01{
+				width: 6em;
+			}
+		}
+	}
+}
