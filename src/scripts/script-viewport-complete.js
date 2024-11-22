@@ -38,13 +38,26 @@
         {
             function isInViewport(_this) {
                 try {
-                    var elementTop = _this.offset().top;
-                    var elementBottom = elementTop + _this.outerHeight();
+                    // var elementTop = _this.offset().top;
+                    // var elementBottom = elementTop + _this.outerHeight();
 
-                    var viewportTop = $(window).scrollTop();
-                    var viewportBottom = viewportTop + $(window).height();
+                    // var viewportTop = $(window).scrollTop();
+                    // var viewportBottom = viewportTop + $(window).height();
 
-                    return elementBottom > viewportTop && elementTop < viewportBottom;
+                    // return elementBottom > viewportTop && elementTop < viewportBottom;
+                    var $div = _this; // Substitua pelo seletor da sua div
+                    var windowTop = $(window).scrollTop();
+                    var windowBottom = windowTop + $(window).height();
+                    var divTop = $div.offset().top;
+                    var divBottom = divTop + $div.outerHeight();
+
+                    if (divBottom >= windowTop && divTop <= windowBottom) {
+                        //   console.log("A div está visível na viewport!");
+                        return true;
+                    } else {
+                        //console.log("A div não está visível na viewport.");
+                        return false;
+                    }
                 } catch (e) {
                     console.log(e);
                 }

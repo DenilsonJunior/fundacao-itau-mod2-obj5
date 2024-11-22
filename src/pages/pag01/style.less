@@ -1,11 +1,30 @@
 @import '../../less/includes/colors.less';
 @import '../../less/includes/fonts.less';
 
+.full-iframe {
+    body {
+        background-color: @color-01;
+    }
+}
+
 .mr-full {
-    background-image: url(../../assets/img/croqui.png);
-    background-size: cover;
-    background-position: top center;
-    background-attachment: local;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+        width: 15px;
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #F90;
+    }
 }
 
 header {

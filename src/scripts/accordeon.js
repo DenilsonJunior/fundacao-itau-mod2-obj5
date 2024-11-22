@@ -8,6 +8,7 @@ events.on("ready", function () {
 
     titles.find(".seta-container").addClass("animated infinite pulse");
     titles.on("click", function () {
+      $(this).removeClass("animated infinite pulse");
       var title = $(this);
       contents.filter(":visible").slideUp(function () {
         $(this).prev(".accordeon-title").removeClass("is-opened");
